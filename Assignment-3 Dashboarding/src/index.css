@@ -1,0 +1,40 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+:root {
+  --primary: #007bff;
+  --bg: #f5f7fa;
+  --text: #333;
+  --card: #fff;
+}
+
+[data-theme='dark'] {
+  --primary: #00bfff;
+  --bg: #1e1e2f;
+  --text: #f0f0f0;
+  --card: #2e2e3e;
+}
+/* src/theme.css */
+.theme-light {
+  --bg: #f5f7fa;
+  --text: #333;
+  --card: #fff;
+}
+
+.theme-dark {
+  --bg: #1e1e2f;
+  --text: #f0f0f0;
+  --card: #2e2e3e;
+}
