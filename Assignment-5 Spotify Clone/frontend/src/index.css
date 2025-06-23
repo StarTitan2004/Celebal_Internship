@@ -1,0 +1,91 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #121212;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #000;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #1db954;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.sidebar nav a svg {
+  margin-right: 10px;
+}
+
+.main-content {
+  margin-left: 220px;
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.header {
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+.playlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.song {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.song:hover {
+  background-color: #333;
+}
+
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 220px;
+  right: 0;
+  background: #181818;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+}
+.player-controls {
+  display: flex;
+  align-items: center;
+}
